@@ -1,0 +1,39 @@
+{
+    "info": {
+        "_postman_id": "78278fbc-eba3-4f0d-8926-8a17bda69d80",
+        "name": "QRCode",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "qrcode",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:5000/generate_qr_code",
+                    "path": [
+                        "generate_qr_code"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"link\":\"https://textxet.netlify.app/\"\n}"
+                }
+            }
+        }
+    ]
+}
